@@ -1,0 +1,210 @@
+/* Basic Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  /* Body and General Styles */
+  body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f8f9fa;
+    color: #333;
+  }
+  
+  a {
+    text-decoration: none;
+  }
+  
+  /* Navbar */
+  nav {
+    background-color: #4f46e5;
+  }
+  
+  .navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 16px;
+    height: 64px;
+  }
+  
+  .navbar a {
+    color: white;
+    font-size: 18px;
+    margin: 0 8px;
+    transition: color 0.3s;
+  }
+  
+  .navbar a:hover {
+    color: #fbbf24;
+  }
+  
+  /* Hero Section */
+  header {
+    position: relative;
+    height: 100vh;
+    background: url('https://i.pinimg.com/474x/ba/a8/1d/baa81dddc74b9c3de5e0fd22040d0c4c.jpg') no-repeat center center/cover;
+  }
+  
+  header .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  header h1 {
+    color: white;
+    font-size: 4rem;
+    text-align: center;
+  }
+  
+  header p {
+    color: #e5e7eb;
+    font-size: 1.25rem;
+  }
+  
+  header a {
+    background-color: #fbbf24;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 8px;
+    font-weight: bold;
+    transition: background-color 0.3s;
+  }
+  
+  header a:hover {
+    background-color: #f59e0b;
+  }
+  
+  /* Booking Form */
+  .booking-form {
+    padding: 2rem;
+    max-width: 800px;
+    margin: 0 auto;
+    background-color: white;
+    border-radius: 8px;
+  }
+  
+  .booking-form label {
+    display: block;
+    margin-bottom: 0.5rem;
+    font-weight: bold;
+  }
+  
+  .booking-form input,
+  .booking-form select {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    margin-bottom: 1rem;
+  }
+  
+  .booking-form button {
+    background-color: #4f46e5;
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 4px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .booking-form button:hover {
+    background-color: #3730a3;
+  }
+  
+  /* Specializations */
+  .specializations {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 2rem;
+    background-color: #f3f4f6;
+  }
+  
+  .specializations .item {
+    width: 200px;
+    text-align: center;
+    margin: 1rem;
+  }
+  
+  .specializations img {
+    width: 100%;
+    border-radius: 8px;
+  }
+  
+  /* Testimonials */
+  .testimonials {
+    background-color: white;
+    padding: 2rem;
+    text-align: center;
+  }
+  
+  .testimonials .card {
+    background-color: #f3f4f6;
+    border-radius: 8px;
+    padding: 1rem;
+    margin: 1rem;
+    display: inline-block;
+    width: 300px;
+  }
+  
+  /* Footer */
+  footer {
+    background-color: #4f46e5;
+    color: white;
+    padding: 1rem;
+    text-align: center;
+  }
+  
+  /* Scrolling Text Animation */
+  .scrolling-text {
+    position: relative;
+    background-color: #4f46e5;
+    overflow: hidden;
+    white-space: nowrap;
+    padding: 10px 0;
+    font-size: 1.25rem; /* Adjusted font size */
+    color: white;
+    box-shadow: inset 0 -2px 5px rgba(0, 0, 0, 0.3); /* Added shadow for better readability */
+  }
+  
+  .scrolling-text span {
+    display: inline-block;
+    animation: scroll-text 15s linear infinite;
+  }
+  
+  @keyframes scroll-text {
+    0% {
+      transform: translateX(100%);
+    }
+    100% {
+      transform: translateX(-100%);
+    }
+  }
+  /* Add this to your CSS file */
+  @media only screen and (max-width: 768px) {
+    /* Adjust the layout for smaller screens */
+    .container {
+      max-width: 100%;
+    }
+    .grid-cols-1 {
+      grid-template-columns: 1fr;
+    }
+    .grid-cols-2 {
+      grid-template-columns: 1fr 1fr;
+    }
+    .grid-cols-3 {
+      grid-template-columns: 1fr 1fr 1fr;
+    }
+  }

@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us - Abaya Elegance</title>
+    <link rel="stylesheet" href="dist/styles.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+        .hero-text-shadow {
+            text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.6);
+        }
+        .section-header {
+            font-size: 2.5rem;
+            color: #2d3748; /* Darker text for section headers */
+        }
+        .section-content {
+            font-size: 1.125rem;
+            color: #4a5568; /* Lighter text for body content */
+        }
+        .team-member {
+            border: 1px solid #e2e8f0;
+            border-radius: 0.375rem;
+            padding: 1.5rem;
+            background-color: #f7fafc;
+        }
+        .team-member img {
+            border-radius: 50%;
+            width: 150px;
+            height: 150px;
+            object-fit: cover;
+        }
+    </style>
+</head>
+
+<body class="bg-gray-100">
+
+    <!-- Navbar -->
+    <nav class="w-full h-20 bg-teal-700 flex justify-between px-6 items-center shadow-lg relative">
+        <div class="text-3xl text-white font-extrabold">
+            Abaya Elegance
+        </div>
+        <!-- Desktop Menu -->
+        <ul class="hidden md:flex space-x-8 font-medium text-white">
+            <li><a href="index.html" class="hover:text-teal-300">Home</a></li>
+            <li><a href="about.html" class="hover:text-teal-300">About</a></li>
+            <li><a href="collection.html" class="hover:text-teal-300">Collection</a></li>
+            <li><a href="contact.html" class="hover:text-teal-300">Contact</a></li>
+        </ul>
+        <!-- Mobile Menu Toggle -->
+        <button class="md:hidden text-4xl text-white focus:outline-none" id="menu-toggle">
+            &#9776;
+        </button>
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="mobile-menu absolute top-20 left-0 w-full bg-teal-700 text-white shadow-lg">
+            <ul class="flex flex-col space-y-4 px-4 py-4 font-medium">
+                <li><a href="index.html" class="hover:text-teal-300">Home</a></li>
+                <li><a href="about.html" class="hover:text-teal-300">About</a></li>
+                <li><a href="collection.html" class="hover:text-teal-300">Collection</a></li>
+                <li><a href="contact.html" class="hover:text-teal-300">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <header class="w-full h-64 bg-teal-700 flex items-center justify-center text-center text-white">
+        <h1 class="text-4xl font-bold hero-text-shadow">About Us</h1>
+    </header>
+
+    <!-- Main Content -->
+    <main class="py-16 px-6">
+        <section class="container mx-auto">
+            <h2 class="section-header mb-6">Our Story</h2>
+            <p class="section-content mb-8">At Abaya Elegance, we believe in offering timeless and elegant abayas that blend tradition with modern style. Our journey began with a passion for creating beautiful garments that empower women and celebrate their heritage. From the finest fabrics to intricate designs, every abaya is crafted with care and dedication.</p>
+            
+            <h2 class="section-header mb-6">Our Mission</h2>
+            <p class="section-content mb-8">Our mission is to provide high-quality abayas that are both stylish and comfortable. We strive to meet the diverse needs of our customers and deliver exceptional value. With a focus on customer satisfaction, we continuously innovate and improve to offer the best in fashion and service.</p>
+
+            <h2 class="section-header mb-6">Meet the Team</h2>
+<div class="flex flex-wrap -mx-4">
+    <div class="team-member mx-4 mb-6 text-center">
+        <img src="https://via.placeholder.com/150" alt="Team Member">
+        <h3 class="font-bold mt-4">Jane Doe</h3>
+        <p class="text-gray-600">Founder & CEO</p>
+    </div>
+    <div class="team-member mx-4 mb-6 text-center">
+        <img src="https://via.placeholder.com/150" alt="Team Member">
+        <h3 class="font-bold mt-4">John Smith</h3>
+        <p class="text-gray-600">Creative Director</p>
+    </div>
+    <!-- New team members added below -->
+    <div class="team-member mx-4 mb-6 text-center">
+        <img src="https://via.placeholder.com/150" alt="Team Member">
+        <h3 class="font-bold mt-4">Emily Johnson</h3>
+        <p class="text-gray-600">Marketing Head</p>
+    </div>
+    <div class="team-member mx-4 mb-6 text-center">
+        <img src="https://via.placeholder.com/150" alt="Team Member">
+        <h3 class="font-bold mt-4">David Lee</h3>
+        <p class="text-gray-600">Lead Designer</p>
+    </div>
+</div>
+
+        </section>
+    </main>
+
+    <script>
+        // Toggle mobile menu visibility
+        document.getElementById('menu-toggle').addEventListener('click', function() {
+            document.getElementById('mobile-menu').classList.toggle('show');
+        });
+    </script>
+        <!-- Our Values Section -->
+        <section class="py-16 px-6 bg-gray-100">
+            <div class="container mx-auto">
+                <h2 class="section-header mb-6 text-center">Our Values</h2>
+                <div class="flex flex-wrap justify-center">
+                    <div class="value-item mx-4 mb-6 text-center">
+                        <i class="fas fa-gem text-4xl text-teal-500 mb-4"></i>
+                        <h3 class="font-bold mt-4">Quality</h3>
+                        <p class="text-gray-600">We ensure that every abaya is made from the finest materials, ensuring durability and comfort.</p>
+                    </div>
+                    <div class="value-item mx-4 mb-6 text-center">
+                        <i class="fas fa-leaf text-4xl text-teal-500 mb-4"></i>
+                        <h3 class="font-bold mt-4">Sustainability</h3>
+                        <p class="text-gray-600">Our commitment to sustainability is reflected in our use of eco-friendly fabrics and ethical production methods.</p>
+                    </div>
+                    <div class="value-item mx-4 mb-6 text-center">
+                        <i class="fas fa-users text-4xl text-teal-500 mb-4"></i>
+                        <h3 class="font-bold mt-4">Community</h3>
+                        <p class="text-gray-600">We empower women around the world through our abayas and engage with our community.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    
+        <!-- Customer Testimonials Section -->
+        <section class="py-16 px-6 bg-white">
+            <div class="container mx-auto">
+                <h2 class="section-header mb-6 text-center">Customer Testimonials</h2>
+                <div class="flex flex-col items-center">
+                    <div class="testimonial-item mb-6 text-center max-w-xl">
+                        <p class="text-gray-600 italic">"I absolutely love the quality of the abayas from Abaya Elegance. They are so comfortable and stylish!"</p>
+                        <h4 class="font-bold mt-4">- Amina K.</h4>
+                    </div>
+                    <div class="testimonial-item mb-6 text-center max-w-xl">
+                        <p class="text-gray-600 italic">"Exceptional customer service and beautiful designs. I always get compliments when I wear these abayas!"</p>
+                        <h4 class="font-bold mt-4">- Sara M.</h4>
+                    </div>
+                </div>
+            </div>
+        </section>
+    
+        <!-- Our Process Section -->
+        <section class="py-16 px-6 bg-gray-100">
+            <div class="container mx-auto">
+                <h2 class="section-header mb-6 text-center">Our Process</h2>
+                <div class="flex flex-wrap justify-center">
+                    <div class="process-step mx-4 mb-6 text-center">
+                        <img src="https://via.placeholder.com/150" alt="Step 1" class="rounded-full mx-auto">
+                        <h3 class="font-bold mt-4">Step 1: Material Selection</h3>
+                        <p class="text-gray-600">We handpick the finest fabrics from around the world to ensure comfort and quality.</p>
+                    </div>
+                    <div class="process-step mx-4 mb-6 text-center">
+                        <img src="https://via.placeholder.com/150" alt="Step 2" class="rounded-full mx-auto">
+                        <h3 class="font-bold mt-4">Step 2: Design</h3>
+                        <p class="text-gray-600">Our designers create modern yet traditional abayas that cater to your style preferences.</p>
+                    </div>
+                    <div class="process-step mx-4 mb-6 text-center">
+                        <img src="https://via.placeholder.com/150" alt="Step 3" class="rounded-full mx-auto">
+                        <h3 class="font-bold mt-4">Step 3: Craftsmanship</h3>
+                        <p class="text-gray-600">Our skilled artisans carefully craft each abaya with attention to detail.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    
+        <!-- Call-to-Action Section -->
+        <section class="text-center py-16 bg-teal-700 text-white">
+            <h2 class="section-header mb-4">Join Our Community</h2>
+            <p class="section-content mb-6">Stay updated with the latest abaya collections, fashion tips, and exclusive offers.</p>
+            <a href="subscribe.html" class="bg-white text-teal-700 py-2 px-6 rounded-full font-semibold hover:bg-teal-100 transition">Subscribe to our Newsletter</a>
+        </section>
+    
+        <!-- Footer -->
+        <footer class="footer bg-teal-700 text-center py-8">
+            <div class="container mx-auto">
+                <p class="text-white text-lg font-semibold">© 2024 Abaya Elegance. All Rights Reserved.</p>
+                <p class="text-white mt-2">
+                    <a href="privacy.html" class="hover:underline">Privacy Policy</a> | 
+                    <a href="terms.html" class="hover:underline">Terms of Service</a>
+                </p>
+                <div class="mt-4">
+                    <a href="https://www.facebook.com" class="text-white mx-2 hover:text-teal-300">
+                        <i class="fab fa-facebook-f"></i> 
+                    </a>
+                    <a href="https://www.instagram.com" class="text-white mx-2 hover:text-teal-300">
+                        <i class="fab fa-instagram"></i> 
+                    </a>
+                    <a href="https://www.twitter.com" class="text-white mx-2 hover:text-teal-300">
+                        <i class="fab fa-twitter"></i> 
+                    </a>
+                </div>
+            </div>
+        </footer>
+    
+
+    
+
+    
+
+</body>
+
+</html>

@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Enquiry</title>
+    <link rel="stylesheet" href="https://cdn.tailwindcss.com">
+    <style>
+        /* Custom styles for the enquiry form */
+        .enquiry-container {
+            margin-top: 4rem;
+            padding: 2rem;
+            background: linear-gradient(135deg, #f6d365, #fda085);
+            border-radius: 0.75rem;
+            box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.15);
+        }
+
+        .form-item {
+            margin-bottom: 1.5rem;
+        }
+
+        .form-label {
+            font-size: 1.25rem;
+            font-weight: 600;
+            color: #2d3748;
+        }
+
+        .form-input,
+        .form-textarea {
+            width: 100%;
+            padding: 0.75rem;
+            border-radius: 0.5rem;
+            border: 1px solid #cbd5e0;
+            transition: border-color 0.3s ease;
+        }
+
+        .form-input:focus,
+        .form-textarea:focus {
+            border-color: #6b46c1;
+            outline: none;
+        }
+
+        .button-container {
+            margin-top: 2rem;
+            display: flex;
+            justify-content: center;
+        }
+
+        .button {
+            padding: 0.75rem 1.5rem;
+            background-color: #6b46c1;
+            color: white;
+            border-radius: 0.5rem;
+            text-align: center;
+            font-weight: bold;
+            text-decoration: none;
+            transition: background-color 0.3s ease;
+        }
+
+        .button:hover {
+            background-color: #553c9a;
+        }
+    </style>
+</head>
+
+<body class="bg-gray-50">
+
+    <div class="max-w-3xl mx-auto enquiry-container">
+        <h1 class="text-4xl font-extrabold text-white mb-10 text-center">Enquiry Form</h1>
+
+        <form>
+            <div class="form-item">
+                <label class="form-label" for="name">Full Name</label>
+                <input class="form-input" type="text" id="name" name="name" required placeholder="Enter your full name">
+            </div>
+
+            <div class="form-item">
+                <label class="form-label" for="email">Email Address</label>
+                <input class="form-input" type="email" id="email" name="email" required placeholder="Enter your email address">
+            </div>
+
+            <div class="form-item">
+                <label class="form-label" for="message">Your Message</label>
+                <textarea class="form-textarea" id="message" name="message" rows="5" required placeholder="Type your message here..."></textarea>
+            </div>
+
+            <div class="button-container">
+                <button type="submit" class="button">Submit Enquiry</button>
+            </div>
+        </form>
+    </div>
+
+    <!-- Font Awesome Icons -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/js/all.min.js"></script>
+</body>
+
+</html>

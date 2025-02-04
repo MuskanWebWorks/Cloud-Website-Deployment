@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Order Status</title>
+    <link rel="stylesheet" href="https://cdn.tailwindcss.com">
+    <style>
+        /* Custom styles for the order status */
+        .status-container {
+            margin-top: 4rem;
+            padding: 2rem;
+            background: linear-gradient(135deg, #81e6d9, #d4fc79);
+            border-radius: 0.75rem;
+            box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.15);
+        }
+
+        .status-item {
+            display: flex;
+            align-items: center;
+            padding: 1.5rem;
+            background-color: white;
+            border-radius: 1rem;
+            margin-bottom: 1.5rem;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .status-item:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+        }
+
+        .status-icon {
+            font-size: 2rem;
+            margin-right: 1.5rem;
+            color: #319795;
+        }
+
+        .status-text {
+            font-size: 1.5rem;
+            font-weight: 600;
+            color: #2d3748;
+        }
+
+        .status-step {
+            background: #319795;
+            color: white;
+            padding: 0.25rem 0.75rem;
+            border-radius: 0.5rem;
+            font-size: 1rem;
+            font-weight: bold;
+            margin-left: auto;
+        }
+
+        .button-container {
+            margin-top: 2rem;
+            display: flex;
+            justify-content: space-around;
+        }
+
+        .button {
+            padding: 0.75rem 1.5rem;
+            background-color: #319795;
+            color: white;
+            border-radius: 0.5rem;
+            text-align: center;
+            font-weight: bold;
+            text-decoration: none;
+            transition: background-color 0.3s ease;
+        }
+
+        .button:hover {
+            background-color: #2b7a73;
+        }
+    </style>
+</head>
+
+<body class="bg-gray-50">
+
+    <div class="max-w-3xl mx-auto status-container">
+        <h1 class="text-4xl font-extrabold text-white mb-10 text-center">Track Your Order Status</h1>
+
+        <!-- Order status items with steps -->
+        <div class="status-item">
+            <i class="fas fa-box status-icon"></i>
+            <span class="status-text">Order Placed</span>
+            <span class="status-step">Step 1</span>
+        </div>
+
+        <div class="status-item">
+            <i class="fas fa-truck status-icon"></i>
+            <span class="status-text">Order Shipped</span>
+            <span class="status-step">Step 2</span>
+        </div>
+
+        <div class="status-item">
+            <i class="fas fa-clipboard-check status-icon"></i>
+            <span class="status-text">Out for Delivery</span>
+            <span class="status-step">Step 3</span>
+        </div>
+
+        <div class="status-item">
+            <i class="fas fa-home status-icon"></i>
+            <span class="status-text">Order Delivered</span>
+            <span class="status-step">Step 4</span>
+        </div>
+
+        <div class="button-container">
+            <a href="collection.html" class="button">Continue Shopping</a>
+            <a href="contact.html" class="button">Need Help?</a>
+        </div>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/js/all.min.js"></script>
+</body>
+
+</html>
+
+        <!-- Button Container -->
+        <div class="button-container">
+            <a href="collection.html" class="button">Explore Collection</a>
+            <a href="index.html" class="button">Back to Home</a>
+        </div>
+    </div>
+
+    <!-- Font Awesome Icons -->
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+</body>
+
+</html>

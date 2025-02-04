@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PARTY COLLECTION  - Abaya Elegance</title>
+    <link rel="stylesheet" href="dist/styles.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/css/lightbox.min.css" rel="stylesheet">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
+
+        body {
+            font-family: 'Poppins', sans-serif;
+            background: linear-gradient(135deg, #f0f4f8, #dfe7ec);
+            margin: 0;
+            padding: 0;
+        }
+
+        .navbar {
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+
+        .collection-header {
+            background: linear-gradient(to right, #0f766e, #38b2ac);
+            color: white;
+            padding: 1rem;
+            text-align: center;
+        }
+
+        .collection-item {
+            border: 1px solid #e2e8f0;
+            border-radius: 0.75rem;
+            padding: 1rem;
+            background-color: #ffffff;
+            text-align: center;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .collection-item img {
+            border-radius: 0.75rem;
+            width: 100%;
+            height: auto;
+            object-fit: cover;
+            transition: transform 0.3s ease-in-out;
+        }
+
+        .collection-item:hover img {
+            transform: scale(1.1); /* Zoom effect */
+        }
+
+        .collection-item:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+        }
+
+        .collection-item h3 {
+            font-size: 1.5rem;
+            color: #1a202c;
+            margin-top: 0.75rem;
+            font-weight: 600;
+        }
+
+        .collection-item p {
+            color: #718096;
+            margin-top: 0.5rem;
+        }
+
+        .price {
+            color: #38b2ac;
+            font-size: 1.2rem;
+            font-weight: bold;
+            margin-top: 0.5rem;
+        }
+
+        h1, h2 {
+            background: linear-gradient(to right, #0f766e, #38b2ac);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            font-weight: bold;
+        }
+
+        .navbar a {
+            transition: background-color 0.3s;
+        }
+
+        .navbar a:hover {
+            background-color: rgba(255, 255, 255, 0.2);
+            padding: 0.5rem 1rem;
+            border-radius: 0.375rem;
+        }
+
+        .button-primary {
+            padding: 0.75rem 1.5rem;
+            background-color: #0f766e;
+            color: #ffffff;
+            border-radius: 0.5rem;
+            font-weight: 600;
+            transition: background-color 0.3s ease, transform 0.3s ease;
+            display: inline-block;
+            margin-top: 1rem;
+        }
+
+        .button-primary:hover {
+            background-color: #38b2ac;
+            transform: scale(1.05);
+        }
+
+        .footer {
+            background-color: #0f766e;
+            color: white;
+            padding: 2rem 0;
+        }
+
+        .footer a {
+            color: #38b2ac;
+            text-decoration: underline;
+        }
+
+        .testimonials {
+            background-color: #ffffff;
+            padding: 2rem;
+            border-radius: 0.75rem;
+            margin-top: 2rem;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Navbar -->
+    <nav class="w-full h-20 bg-teal-700 flex justify-between px-6 items-center navbar">
+        <div class="text-3xl text-white font-extrabold">Abaya Elegance</div>
+        <ul class="hidden md:flex space-x-8 font-medium text-white">
+            <li><a href="index.html" class="hover:text-teal-300">Home</a></li>
+            <li><a href="about.html" class="hover:text-teal-300">About</a></li>
+            <li><a href="collection.html" class="hover:text-teal-300">Collection</a></li>
+            <li><a href="contact.html" class="hover:text-teal-300">Contact</a></li>
+        </ul>
+    </nav>
+
+    <!-- Party Wear Collection -->
+    <header class="w-full h-64 wedding-banner flex items-center justify-center text-center text-white">
+        <h1 class="text-4xl font-bold">PARTY COLLECTION</h1>
+    </header>
+
+    <!-- Main Content -->
+    <main class="py-16 px-6">
+        <section class="container mx-auto">
+            <h2 class="text-2xl font-bold mb-6">PARTY ABAYAS</h2>
+
+            <!-- Party Wear Grid -->
+            <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
+                <div class="collection-item">
+                    <a href="https://i.pinimg.com/474x/c6/5b/f9/c65bf9bef789fa30dc21035d5718e4ee.jpg" data-lightbox="party-gallery" data-title="Classic Elegance">
+                        <img src="https://i.pinimg.com/474x/c6/5b/f9/c65bf9bef789fa30dc21035d5718e4ee.jpg" alt="Party Wear 1">
+                    </a>
+                    <h3 class="mt-4">Classic Elegance</h3>
+                    <p>Timeless design with intricate details.</p>
+                    <p class="price">$120.00</p>
+                    <button class="button-primary">Add to Cart</button>
+                </div>
+                <div class="collection-item">
+                    <a href="https://i.pinimg.com/236x/06/60/81/066081b52991784d5bc63a0ff7cbce73.jpg" data-lightbox="party-gallery" data-title="Modern Glamour">
+                        <img src="https://i.pinimg.com/236x/06/60/81/066081b52991784d5bc63a0ff7cbce73.jpg" alt="Party Wear 2">
+                    </a>
+                    <h3>Modern Glamour</h3>
+                    <p>Contemporary style meets classic elegance.</p>
+                    <p class="price">$140.00</p>
+                    <button class="button-primary">Add to Cart</button>
+                </div>
+                <div class="collection-item">
+                    <a href="https://i.pinimg.com/474x/6f/03/70/6f0370edbc41e37bcee8a187dbdc7109.jpg" data-lightbox="party-gallery" data-title="Royal Embroidery">
+                        <img src="https://i.pinimg.com/474x/6f/03/70/6f0370edbc41e37bcee8a187dbdc7109.jpg" alt="Party Wear 3">
+                    </a>
+                    <h3>Royal Embroidery</h3>
+                    <p>Exquisitely crafted with royal embroidery.</p>
+                    <p class="price">$150.00</p>
+                    <button class="button-primary">Add to Cart</button>
+                </div>
+                <div class="collection-item">
+                    <a href="https://i.pinimg.com/474x/82/53/7a/82537a5aa58133d0f3322fabdac4ee50.jpg" data-lightbox="party-gallery" data-title="Festive Charm">
+                        <img src="https://i.pinimg.com/474x/82/53/7a/82537a5aa58133d0f3322fabdac4ee50.jpg" alt="Party Wear 4">
+                    </a>
+                    <h3>Festive Charm</h3>
+                    <p>Perfect for festive occasions and celebrations.</p>
+                    <p class="price">$130.00</p>
+                    <button class="button-primary">Add to Cart</button>
+                </div>
+                <div class="collection-item">
+                    <a href="https://i.pinimg.com/236x/82/7a/44/827a441cbbaf32050b9c9808d877caa0.jpg" data-lightbox="party-gallery" data-title="Elegant Grace">
+                        <img src="https://i.pinimg.com/236x/82/7a/44/827a441cbbaf32050b9c9808d877caa0.jpg" alt="Party Wear 5">
+                    </a>
+                    <h3>Elegant Grace</h3>
+                    <p>Minimalist design with delicate embroidery.</p>
+                    <p class="price">$125.00</p>
+                    <button class="button-primary">Add to Cart</button>
+                </div>
+                <div class="collection-item">
+                    <a href="https://i.pinimg.com/474x/c3/3e/ca/c33eca8983534c09c17fc0c2cb6be9f5.jpg" data-lightbox="party-gallery" data-title="Floral Fantasy">
+                        <img src="https://i.pinimg.com/474x/c3/3e/ca/c33eca8983534c09c17fc0c2cb6be9f5.jpg" alt="Party Wear 6">
+                    </a>
+                    <h3>Floral Fantasy</h3>
+                    <p>Delicate floral patterns for a fresh look.</p>
+                    <p class="price">$110.00</p>
+                    <button class="button-primary">Add to Cart</button>
+                </div>
+                <div class="collection-item">
+                    <a href="https://i.pinimg.com/236x/3e/15/a8/3e15a813a7ff7260d9cc187e5fc56dad.jpg" data-lightbox="party-gallery" data-title="Sleek Design">
+                        <img src="https://i.pinimg.com/236x/3e/15/a8/3e15a813a7ff7260d9cc187e5fc56dad.jpg" alt="Party Wear 7">
+                    </a>
+                    <h3>Sleek Design</h3>
+                    <p>Streamlined look for modern aesthetics.</p>
+                    <p class="price">$135.00</p>
+                    <button class="button-primary">Add to Cart</button>
+                </div>
+                <div class="collection-item">
+                    <a href="https://i.pinimg.com/474x/70/3a/20/703a20c1e216e247a480fb2cd5616b31.jpg" data-lightbox="party-gallery" data-title="Vintage Appeal">
+                        <img src="https://i.pinimg.com/474x/70/3a/20/703a20c1e216e247a480fb2cd5616b31.jpg" alt="Party Wear 8">
+                    </a>
+                    <h3>Vintage Appeal</h3>
+                    <p>Classic styles that never go out of fashion.</p>
+                    <p class="price">$145.00</p>
+                    <button class="button-primary">Add to Cart</button>
+                </div>
+            </div>
+        </section>
+
+        <!-- Testimonials Section -->
+<section class="testimonials mt-16 p-8 bg-gray-100 rounded-lg shadow-lg">
+    <h2 class="text-3xl font-bold text-center mb-6 text-teal-700">What Our Customers Say</h2>
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+        <div class="bg-white p-4 rounded-lg shadow-md">
+            <div class="flex items-center mb-4">
+                <img src="https://via.placeholder.com/50" alt="Sarah" class="rounded-full mr-4">
+                <div>
+                    <p class="font-bold">Sarah</p>
+                    <p class="text-sm text-gray-500">sarah@example.com</p>
+                </div>
+            </div>
+            <p class="text-lg italic">"The quality of the abayas is outstanding! I received so many compliments at the party!"</p>
+            <div class="flex justify-end mt-2">
+                <span class="text-yellow-500">★★★★☆</span>
+            </div>
+        </div>
+        
+        <div class="bg-white p-4 rounded-lg shadow-md">
+            <div class="flex items-center mb-4">
+                <img src="https://via.placeholder.com/50" alt="Fatima" class="rounded-full mr-4">
+                <div>
+                    <p class="font-bold">Fatima</p>
+                    <p class="text-sm text-gray-500">fatima@example.com</p>
+                </div>
+            </div>
+            <p class="text-lg italic">"Absolutely love the modern styles. They fit perfectly!"</p>
+            <div class="flex justify-end mt-2">
+                <span class="text-yellow-500">★★★★★</span>
+            </div>
+        </div>
+        
+        <div class="bg-white p-4 rounded-lg shadow-md">
+            <div class="flex items-center mb-4">
+                <img src="https://via.placeholder.com/50" alt="Aisha" class="rounded-full mr-4">
+                <div>
+                    <p class="font-bold">Aisha</p>
+                    <p class="text-sm text-gray-500">aisha@example.com</p>
+                </div>
+            </div>
+            <p class="text-lg italic">"Best place to buy elegant and stylish abayas!"</p>
+            <div class="flex justify-end mt-2">
+                <span class="text-yellow-500">★★★★☆</span>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+
+        <!-- Newsletter Signup -->
+<section class="mt-16 p-8 bg-gradient-to-r from-teal-500 to-teal-300 rounded-lg shadow-lg text-center">
+    <h2 class="text-4xl font-bold mb-4 text-white">Join Our Community!</h2>
+    <p class="text-lg mb-6 text-white">Subscribe for the latest updates, exclusive offers, and style tips!</p>
+    <div class="flex justify-center">
+        <form class="flex flex-col md:flex-row items-center w-full max-w-lg">
+            <input type="email" placeholder="Your Email" class="border border-gray-300 rounded-lg p-3 mr-2 w-full md:w-2/3 shadow-md focus:outline-none focus:ring-2 focus:ring-teal-600" required>
+            <button type="submit" class="button-primary w-full md:w-1/3 mt-4 md:mt-0 transition-transform transform hover:scale-105">Subscribe</button>
+        </form>
+    </div>
+    <p class="mt-4 text-sm text-white">Your privacy is important to us. We never share your information.</p>
+    <div class="flex justify-center mt-6">
+        <img src="https://via.placeholder.com/50" alt="Inspiration" class="rounded-full border-2 border-white shadow-md">
+        <img src="https://via.placeholder.com/50" alt="Inspiration" class="rounded-full border-2 border-white shadow-md mx-2">
+        <img src="https://via.placeholder.com/50" alt="Inspiration" class="rounded-full border-2 border-white shadow-md">
+    </div>
+</section>
+
+<!-- Footer -->
+<footer class="footer bg-teal-700 text-center py-8 mt-16">
+    <div class="container mx-auto">
+        <p class="text-white text-lg font-semibold">© 2024 Abaya Elegance. All Rights Reserved.</p>
+        <p class="text-white mt-2">
+            <a href="privacy.html" class="hover:underline transition-colors duration-300">Privacy Policy</a> | 
+            <a href="terms.html" class="hover:underline transition-colors duration-300">Terms of Service</a>
+        </p>
+        <div class="mt-4">
+            <a href="https://www.facebook.com" class="text-white mx-2 hover:text-teal-300 transition-colors duration-300">
+                <i class="fab fa-facebook-f"></i> 
+            </a>
+            <a href="https://www.instagram.com" class="text-white mx-2 hover:text-teal-300 transition-colors duration-300">
+                <i class="fab fa-instagram"></i> 
+            </a>
+            <a href="https://www.twitter.com" class="text-white mx-2 hover:text-teal-300 transition-colors duration-300">
+                <i class="fab fa-twitter"></i> 
+            </a>
+        </div>
+    </div>
+</footer>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/js/lightbox-plus-jquery.min.js"></script>
+</body>
+
+</html>

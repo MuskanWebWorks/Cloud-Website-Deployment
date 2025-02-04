@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blogs</title>
+    <link rel="stylesheet" href="https://cdn.tailwindcss.com">
+    <style>
+        /* Custom styles for the blog page */
+        body {
+            background-color: #f7fafc;
+        }
+
+        .hero {
+            background: linear-gradient(135deg, #667eea, #764ba2);
+            color: white;
+            padding: 4rem 0;
+            text-align: center;
+            border-radius: 0.75rem;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+        }
+
+        .hero h1 {
+            font-size: 3rem;
+            font-weight: bold;
+        }
+
+        .hero p {
+            font-size: 1.25rem;
+        }
+
+        .blog-container {
+            margin-top: 2rem;
+        }
+
+        .blog-card {
+            background: white;
+            border-radius: 0.5rem;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s, box-shadow 0.3s;
+            margin-bottom: 2rem;
+        }
+
+        .blog-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 30px rgba(0, 0, 0, 0.15);
+        }
+
+        .blog-image {
+            border-radius: 0.5rem 0.5rem 0 0;
+        }
+
+        .blog-title {
+            font-size: 1.5rem;
+            font-weight: bold;
+            color: #2d3748;
+            padding: 1rem;
+        }
+
+        .blog-excerpt {
+            padding: 0 1rem 1rem;
+            color: #4a5568;
+        }
+
+        .button-container {
+            display: flex;
+            justify-content: center;
+            margin-top: 2rem;
+        }
+
+        .button {
+            padding: 0.75rem 2rem;
+            background-color: #667eea;
+            color: white;
+            border-radius: 0.5rem;
+            text-align: center;
+            font-weight: bold;
+            text-decoration: none;
+            transition: background-color 0.3s;
+        }
+
+        .button:hover {
+            background-color: #5a66db;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="hero">
+        <h1>Our Latest Blogs</h1>
+        <p>Stay updated with insights, tips, and news from our community.</p>
+    </div>
+
+    <div class="max-w-6xl mx-auto blog-container">
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+
+            <!-- Blog Card 1 -->
+            <div class="blog-card">
+                <img src="https://via.placeholder.com/300x200" alt="Blog Image 1" class="blog-image w-full h-48 object-cover">
+                <h2 class="blog-title">Blog Post Title 1</h2>
+                <p class="blog-excerpt">This is a brief description of the first blog post. It gives an overview of the content and entices readers to click for more.</p>
+            </div>
+
+            <!-- Blog Card 2 -->
+            <div class="blog-card">
+                <img src="https://via.placeholder.com/300x200" alt="Blog Image 2" class="blog-image w-full h-48 object-cover">
+                <h2 class="blog-title">Blog Post Title 2</h2>
+                <p class="blog-excerpt">This is a brief description of the second blog post. It captures the essence of the post and encourages engagement.</p>
+            </div>
+
+            <!-- Blog Card 3 -->
+            <div class="blog-card">
+                <img src="https://via.placeholder.com/300x200" alt="Blog Image 3" class="blog-image w-full h-48 object-cover">
+                <h2 class="blog-title">Blog Post Title 3</h2>
+                <p class="blog-excerpt">This is a brief description of the third blog post. It invites readers to delve deeper into the subject matter.</p>
+            </div>
+
+            <!-- Add more blog cards as needed -->
+        </div>
+
+        <div class="button-container">
+            <a href="index.html" class="button">Back to Home</a>
+        </div>
+    </div>
+
+    <!-- Font Awesome Icons -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/js/all.min.js"></script>
+</body>
+
+</html>

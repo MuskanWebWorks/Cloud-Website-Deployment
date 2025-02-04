@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Returns and Refund</title>
+    <link rel="stylesheet" href="https://cdn.tailwindcss.com">
+    <style>
+        /* Custom styles for the returns section */
+        .returns-container {
+            margin-top: 4rem;
+            padding: 2rem;
+            background: linear-gradient(135deg, #f6d365, #fda085);
+            border-radius: 0.75rem;
+            box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.15);
+        }
+
+        .return-item {
+            display: flex;
+            align-items: center;
+            padding: 1.5rem;
+            background-color: white;
+            border-radius: 1rem;
+            margin-bottom: 1.5rem;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .return-item:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+        }
+
+        .return-icon {
+            font-size: 2rem;
+            margin-right: 1.5rem;
+            color: #e53e3e;
+        }
+
+        .return-text {
+            font-size: 1.5rem;
+            font-weight: 600;
+            color: #2d3748;
+        }
+
+        .button-container {
+            margin-top: 2rem;
+            display: flex;
+            justify-content: space-around;
+        }
+
+        .button {
+            padding: 0.75rem 1.5rem;
+            background-color: #e53e3e;
+            color: white;
+            border-radius: 0.5rem;
+            text-align: center;
+            font-weight: bold;
+            text-decoration: none;
+            transition: background-color 0.3s ease;
+        }
+
+        .button:hover {
+            background-color: #c53030;
+        }
+    </style>
+</head>
+
+<body class="bg-gray-50">
+
+    <div class="max-w-3xl mx-auto returns-container">
+        <h1 class="text-4xl font-extrabold text-white mb-10 text-center">Returns and Refund Policy</h1>
+
+        <!-- Returns steps -->
+        <div class="return-item">
+            <i class="fas fa-undo return-icon"></i>
+            <span class="return-text">Initiate Return Request</span>
+        </div>
+
+        <div class="return-item">
+            <i class="fas fa-receipt return-icon"></i>
+            <span class="return-text">Print Return Label</span>
+        </div>
+
+        <div class="return-item">
+            <i class="fas fa-box return-icon"></i>
+            <span class="return-text">Pack and Ship Item</span>
+        </div>
+
+        <div class="return-item">
+            <i class="fas fa-dollar-sign return-icon"></i>
+            <span class="return-text">Receive Your Refund</span>
+        </div>
+
+        <div class="button-container">
+            <a href="order-status.html" class="button">Track Your Return</a>
+            <a href="contact.html" class="button">Need Assistance?</a>
+        </div>
+    </div>
+
+    <!-- Font Awesome Icons -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/js/all.min.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Collection - Abaya Elegance</title>
+    <link rel="stylesheet" href="dist/styles.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+        .hero-text-shadow {
+            text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.6);
+        }
+
+        .section-header {
+            font-size: 2.5rem;
+            color: #2d3748; /* Darker text for section headers */
+        }
+
+        .section-content {
+            font-size: 1.125rem;
+            color: #4a5568; /* Lighter text for body content */
+        }
+
+        .collection-item {
+            border: 1px solid #e2e8f0;
+            border-radius: 0.375rem;
+            padding: 1rem;
+            background-color: #f7fafc;
+            text-align: center;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .collection-item img {
+            border-radius: 0.375rem;
+            width: 100%;
+            height: auto;
+            object-fit: cover;
+        }
+
+        .collection-item:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        .collection-item h3 {
+            font-size: 1.25rem;
+            color: #2d3748;
+        }
+
+        .collection-item p {
+            color: #4a5568;
+        }
+    </style>
+</head>
+
+<body class="bg-gray-100">
+
+    <!-- Navbar -->
+    <nav class="w-full h-20 bg-teal-700 flex justify-between px-6 items-center shadow-lg relative">
+        <div class="text-3xl text-white font-extrabold">
+            Abaya Elegance
+        </div>
+        <!-- Desktop Menu -->
+        <ul class="hidden md:flex space-x-8 font-medium text-white">
+            <li><a href="index.html" class="hover:text-teal-300">Home</a></li>
+            <li><a href="about.html" class="hover:text-teal-300">About</a></li>
+            <li><a href="collection.html" class="hover:text-teal-300">Collection</a></li>
+            <li><a href="contact.html" class="hover:text-teal-300">Contact</a></li>
+        </ul>
+        <!-- Mobile Menu Toggle -->
+        <button class="md:hidden text-4xl text-white focus:outline-none" id="menu-toggle">
+            &#9776;
+        </button>
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="mobile-menu absolute top-20 left-0 w-full bg-teal-700 text-white shadow-lg">
+            <ul class="flex flex-col space-y-4 px-4 py-4 font-medium">
+                <li><a href="index.html" class="hover:text-teal-300">Home</a></li>
+                <li><a href="about.html" class="hover:text-teal-300">About</a></li>
+                <li><a href="collection.html" class="hover:text-teal-300">Collection</a></li>
+                <li><a href="contact.html" class="hover:text-teal-300">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <header class="w-full h-64 bg-teal-700 flex items-center justify-center text-center text-white">
+        <h1 class="text-4xl font-bold hero-text-shadow">Our Collection</h1>
+    </header>
+
+    <!-- Main Content -->
+    <main class="py-16 px-6">
+        <section class="container mx-auto">
+            <h2 class="section-header mb-6">Featured Collections</h2>
+            <p class="section-content mb-12">Explore our exquisite collection of abayas that blend tradition and modernity. Each piece is designed to reflect elegance and style, catering to various tastes and preferences. Discover the perfect abaya for any occasion.</p>
+
+            <!-- Collection Grid -->
+            <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
+                <div class="collection-item">
+                    <a href="wedding.html">
+                        <img src="https://i.pinimg.com/236x/7f/88/32/7f8832f8bbcac7a59453a02491e7fb51.jpg" alt="Wedding Wear">
+                        <h3 class="mt-4">Wedding Wear</h3>
+                        <p>Elegant designs for the perfect wedding look.</p>
+                    </a>
+                </div>
+                <div class="collection-item">
+                    <a href="party.html">
+                        <img src="https://i.pinimg.com/474x/2a/c0/cc/2ac0ccfe4bf283ce838f2807506ab581.jpg" alt="Party Wear">
+                        <h3>Party Wear</h3>
+                        <p>Chic and fashionable styles for parties.</p>
+                    </a>
+                </div>
+                <div class="collection-item">
+                    <a href="college.html">
+                        <img src="https://i.pinimg.com/474x/64/a1/aa/64a1aa89f481198dd42993ca08bee0d9.jpg" alt="College Wear">
+                        <h3>College Wear</h3>
+                        <p>Trendy designs for everyday college life.</p>
+                    </a>
+                </div>
+                <div class="collection-item">
+                    <a href="festive.html">
+                        <img src="https://i.pinimg.com/474x/72/43/12/7243128abb0272f2d046410012303cbc.jpg" alt="Festive Wear">
+                        <h3>Festive Wear</h3>
+                        <p>Beautiful abayas for special occasions.</p>
+                    </a>
+                </div>
+                <!-- Add more collection items as needed -->
+            </div>
+        </section>
+    </main>
+
+    <script>
+        // Toggle mobile menu visibility
+        document.getElementById('menu-toggle').addEventListener('click', function() {
+            document.getElementById('mobile-menu').classList.toggle('show');
+        });
+    </script>
+    <!-- Testimonials Section -->
+<section class="testimonials mt-16 p-8 bg-gray-100 rounded-lg shadow-lg">
+    <h2 class="text-3xl font-bold text-center mb-6 text-teal-700">What Our Customers Say</h2>
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+        <div class="bg-white p-4 rounded-lg shadow-md">
+            <div class="flex items-center mb-4">
+                <img src="https://via.placeholder.com/50" alt="Sarah" class="rounded-full mr-4">
+                <div>
+                    <p class="font-bold">Sarah</p>
+                    <p class="text-sm text-gray-500">sarah@example.com</p>
+                </div>
+            </div>
+            <p class="text-lg italic">"The quality of the abayas is outstanding! I received so many compliments at the party!"</p>
+            <div class="flex justify-end mt-2">
+                <span class="text-yellow-500">★★★★☆</span>
+            </div>
+        </div>
+        
+        <div class="bg-white p-4 rounded-lg shadow-md">
+            <div class="flex items-center mb-4">
+                <img src="https://via.placeholder.com/50" alt="Fatima" class="rounded-full mr-4">
+                <div>
+                    <p class="font-bold">Fatima</p>
+                    <p class="text-sm text-gray-500">fatima@example.com</p>
+                </div>
+            </div>
+            <p class="text-lg italic">"Absolutely love the modern styles. They fit perfectly!"</p>
+            <div class="flex justify-end mt-2">
+                <span class="text-yellow-500">★★★★★</span>
+            </div>
+        </div>
+        
+        <div class="bg-white p-4 rounded-lg shadow-md">
+            <div class="flex items-center mb-4">
+                <img src="https://via.placeholder.com/50" alt="Aisha" class="rounded-full mr-4">
+                <div>
+                    <p class="font-bold">Aisha</p>
+                    <p class="text-sm text-gray-500">aisha@example.com</p>
+                </div>
+            </div>
+            <p class="text-lg italic">"Best place to buy elegant and stylish abayas!"</p>
+            <div class="flex justify-end mt-2">
+                <span class="text-yellow-500">★★★★☆</span>
+            </div>
+        </div>
+    </div>
+</section>
+
+        <!-- Newsletter Signup -->
+<section class="mt-16 p-8 bg-gradient-to-r from-teal-500 to-teal-300 rounded-lg shadow-lg text-center">
+    <h2 class="text-4xl font-bold mb-4 text-white">Join Our Community!</h2>
+    <p class="text-lg mb-6 text-white">Subscribe for the latest updates, exclusive offers, and style tips!</p>
+    <div class="flex justify-center">
+        <form class="flex flex-col md:flex-row items-center w-full max-w-lg">
+            <input type="email" placeholder="Your Email" class="border border-gray-300 rounded-lg p-3 mr-2 w-full md:w-2/3 shadow-md focus:outline-none focus:ring-2 focus:ring-teal-600" required>
+            <button type="submit" class="button-primary w-full md:w-1/3 mt-4 md:mt-0 transition-transform transform hover:scale-105">Subscribe</button>
+        </form>
+    </div>
+    <p class="mt-4 text-sm text-white">Your privacy is important to us. We never share your information.</p>
+    <div class="flex justify-center mt-6">
+        <img src="https://via.placeholder.com/50" alt="Inspiration" class="rounded-full border-2 border-white shadow-md">
+        <img src="https://via.placeholder.com/50" alt="Inspiration" class="rounded-full border-2 border-white shadow-md mx-2">
+        <img src="https://via.placeholder.com/50" alt="Inspiration" class="rounded-full border-2 border-white shadow-md">
+    </div>
+</section>
+
+<!-- Footer -->
+<footer class="footer bg-teal-700 text-center py-8 mt-16">
+    <div class="container mx-auto">
+        <p class="text-white text-lg font-semibold">© 2024 Abaya Elegance. All Rights Reserved.</p>
+        <p class="text-white mt-2">
+            <a href="privacy.html" class="hover:underline transition-colors duration-300">Privacy Policy</a> | 
+            <a href="terms.html" class="hover:underline transition-colors duration-300">Terms of Service</a>
+        </p>
+        <div class="mt-4">
+            <a href="https://www.facebook.com" class="text-white mx-2 hover:text-teal-300 transition-colors duration-300">
+                <i class="fab fa-facebook-f"></i> 
+            </a>
+            <a href="https://www.instagram.com" class="text-white mx-2 hover:text-teal-300 transition-colors duration-300">
+                <i class="fab fa-instagram"></i> 
+            </a>
+            <a href="https://www.twitter.com" class="text-white mx-2 hover:text-teal-300 transition-colors duration-300">
+                <i class="fab fa-twitter"></i> 
+            </a>
+        </div>
+    </div>
+</footer>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/js/lightbox-plus-jquery.min.js"></script>
+</body>
+
+</html>
+
